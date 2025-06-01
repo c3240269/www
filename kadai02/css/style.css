@@ -1,0 +1,36 @@
+@charset "utf-8";
+.background{
+    width: 800px;
+    height: 600px;
+    background-color: beige;
+}
+img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.menu-title {
+    max-width: 227px;
+    font-size: 2.5em;
+    margin-left: 50px;
+    margin-top: -5px;
+    background-color: beige;
+    padding-left: 20px;
+    border:dotted;
+
+    
+}
+.menu-text {
+    max-width: 231px;
+    font-size:1.2em;
+    margin-top:30px;
+    margin-left:50px;
+    background-color: white;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:30px;
+    border:dotted
+}
