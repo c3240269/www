@@ -1,0 +1,23 @@
+@charset "utf-8";
+body{
+    background-color: rgb(224, 245, 255);
+    background-size: cover;
+}
+.h1{
+    color: rgb(64, 188, 64);
+}
+.h2{
+    color: dodgerblue;
+}
+table {
+    border-collapse: collapse;
+}
+table th{
+    background: rgb(235, 235, 235);
+}
+table td{
+    text-align: left;
+    padding: 0px 50px;
+    
+}
+
