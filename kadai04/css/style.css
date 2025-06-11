@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(252, 252, 252);
+    background-size: cover;
+}
+img{
+    margin-left: 250px;
+    width: 50%;
+    
+}
+.h1{
+    color: #ffffff;
+    text-align: center;
+    background-color: black;
+    padding: 1px;
+}
+.buy-Button{
+    color: #ffffff;
+    background-color: coral;
+}
+.product-section{
+    background-color: #ffffff;
+    margin: 30px;
+    padding: 20px;
+}
+.small{
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    padding: 15px;
+}
