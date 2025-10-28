@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>要素の取得と内容の変更</title>
+</head>
+<body>
+    <h1>座席の予約</h1>
+        <p>東京会場<span class = "red">（予約受付中）</span></p>
+        <button onclick="check()">予約する</button>
+        <div id="change"></div>
+
+    <style>
+    .red{
+        color:red;
+        font-weight: bold;
+    }
+ 
+    </style>
+
+    <script>
+        function check(){
+            let span = document.querySelector(".red");
+            span.textContent = "（予約済み）";
+            let button = document.querySelector("button");
+            button.remove();
+            const div = document.getElementById("change");
+            const thanks = document.createElement("p");
+            thanks.textContent = "ありがとうございました。"
+                ;
+            div.appendChild(thanks);
+        }
+        </script>
+</body>
+</html>
