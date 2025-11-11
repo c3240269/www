@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>入場料の一覧</title>
+
+  <style>
+    table {
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th, td {
+      border: 1px solid #000000;
+
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #9cc;
+    }
+
+    td {
+      text-align: right;
+
+    }
+
+  </style>
+</head>
+<body>
+  <h1>入場料の一覧</h1>
+
+  <div id="tableArea"></div>
+
+  <script>
+    const tableArea = document.getElementById("tableArea");
+
+    const adult = 800;
+    const high = 680;
+    const junior = 450;
+    const child = 380;
+
+    let html = "<table>";
+    html += "<tr><th></th><th>大人</th><th>高校生</th><th>中学生</th><th>小学生</th></tr>";
+
+    // 1人～5人まで繰り返す
+    for (let i = 1; i <= 5; i++) {
+      html += "<tr>";
+      html += "<th>" + i + "人</th>"; // 行の左端
+      html += "<td>" + (adult * i) + "円</td>";
+      html += "<td>" + (high * i) + "円</td>";
+      html += "<td>" + (junior * i) + "円</td>";
+      html += "<td>" + (child * i) + "円</td>";
+      html += "</tr>";
+    }
+
+    html += "</table>";
+
+    // 完成した表をページに追加
+    tableArea.innerHTML = html;
+  </script>
+</body>
+</html>
+</body>
+</html>
